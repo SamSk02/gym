@@ -1,0 +1,186 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM'S FITNESS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gym.css">
+    <style>
+        body {
+            background-image: url(https://wallpapercave.com/wp/wp2639536.jpg);
+            background-size: 100%;
+            font-family: 'Lobster', cursive;
+            background-repeat: no-repeat;
+            padding: 0%;
+            margin: 0%;
+            height: 5000px;
+            color: whitesmoke;
+
+
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 100px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 300px;
+        }
+
+        .left div {
+            line-height: 50px;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 36%;
+            margin: 29px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 43px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+
+        }
+
+        .navbar {
+            display: in;
+        }
+
+        .navbar li {
+            display: inline-block;
+            padding: 25px 10px;
+            font-size: 30px;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: yellowgreen;
+        }
+
+        .navbar li a:active {
+            text-decoration: underline;
+            background-color;
+            : rgb(114, 14, 97)
+        }
+
+        .btn {
+            background-color: whitesmoke;
+            color: rgba(43, 7, 41, 0.877);
+            font-family: 'Lobster', cursive;
+            ;
+            margin: 0px 25px;
+            padding: 5px;
+            font-size: 25px;
+            border: 2px solid darkolivegreen;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: cyan;
+        }
+
+        .container {
+            text-align: left;
+            padding: 5px;
+            margin: 325px 125px;
+            /* border: 3px solid lightcyan; */
+            width: 45%;
+        }
+
+        .formgroup input {
+            font-family: 'lobster', cursive;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 15px auto;
+            font-size: 30px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+            padding: 20px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="left">
+                <img src="https://p7.hiclipart.com/preview/576/568/30/fitness-centre-physical-fitness-logo-work-out.jpg"
+                    alt="" srcset="">
+                <div>Sam's Fitness</div>
+            </div>
+            <div class="mid">
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">FITNESS CALCULATOR</a></li>
+                        <li><a href="#">COURSES</a></li>
+                        <li><a href="#">PRICING</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <button class="btn">CALL US NOW</button>
+                <button class="btn">EMAIL US</button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN THE BEST GYN IN GOREGAON</h1>
+        <form action="submit.php" method="POST">
+            <div class="formgroup">
+                <input type="text" id="name" placeholder="enter your name" name="name">
+            </div>
+            <div class="formgroup">
+                <input type="text" id="text" placeholder="enter your age" name="age">
+            </div>
+            <div class="formgroup">
+                <input type="text" id="gender" placeholder="enter your gender" name="gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" id="locality" placeholder="enter your locality" name="locality">
+            </div>
+            <div class="formgroup">
+                <input type="number" id="mobile no" placeholder="enter your mobile no" name="phone">
+            </div>
+            <!-- <button class="btn" value="submit">SUBMIT</button> -->
+            <input type="submit" value="submit">
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>
